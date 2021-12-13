@@ -1,0 +1,54 @@
+1. Installing, Testing & Commissioning
+	a. Solar PV systems
+	b. Electrical
+	c. Transformers
+2. Transformers
+	a.Distribution & Power Transformers
+	b.Ground Mount Transformers'
+	c.Industrial Transformers
+3. Project Management
+4. Accreditations
+5. Contact Us
+
+
+<div class="navbar-end">
+        <router-link to="/" class="navbar-item" :class="{ isNavShown }" exact
+          >Home</router-link
+        >
+        <router-link
+          to="/instillation"
+          class="navbar-item"
+          :class="{ isNavShown }"
+          active-class="router-link-active"
+          >Instillation</router-link
+        >
+        <router-link
+          to="/transformers"
+          class="navbar-item"
+          :class="{ isNavShown }"
+          active-class="router-link-active"
+          >Transformers</router-link
+        >
+        <router-link
+          to="/project-management"
+          class="navbar-item"
+          :class="{ isNavShown }"
+          active-class="router-link-active"
+          >Project Management</router-link
+        >
+        <router-link
+          to="/accreditations"
+          class="navbar-item"
+          :class="{ isNavShown }"
+          active-class="router-link-active"
+          >Accreditations</router-link
+        >
+        <router-link
+          to="/contact-us"
+          class="navbar-item"
+          :class="{ isNavShown }"
+          active-class="router-link-active"
+          >Contact Us</router-link
+        >
+      </div>
+
