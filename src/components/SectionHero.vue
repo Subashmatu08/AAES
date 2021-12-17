@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <img :src="require(`@/assets/${heroimg}`)" class="banner" alt="" />
+    <img :src="require(`@/assets/${heroimg}`)" class="banner" alt="AAES" />
     <div class="hero-desc">
       <div>
         <h1 class="title has-text-white is-size-1">{{ herotitle }}</h1>

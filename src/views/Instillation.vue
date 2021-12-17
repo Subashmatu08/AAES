@@ -1,8 +1,8 @@
 <template>
   <section-hero
-    herotitle="Instillation"
+    herotitle="Installation, Testing &amp; Commissioning"
     herodesc="This is a description"
-    heroimg="inst-hero3.jpg"
+    heroimg="inst-hero-inst.jpg"
   />
   <div class="container-m">
     <p class="title pb-5 is-size-2">What are all the Instillations we do?</p>
@@ -91,9 +91,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-m {
-  margin: 5rem;
-}
 p.text {
   text-align: justify;
 }
@@ -106,5 +103,10 @@ p.text {
 .image {
   width: 100%;
   border-radius: 5px;
+}
+</style>
+<style lang="scss">
+.container-m {
+  margin: 5rem;
 }
 </style>
