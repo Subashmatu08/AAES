@@ -24,7 +24,8 @@
       :autoplay="3000"
       :wrapAround="true"
       class="carousel"
-      :items-to-show="3.95"
+      :settings="settings"
+      :breakpoints="breakpoints"
     >
       <template #slides>
         <Slide v-for="item in items" :key="item.id">
@@ -73,20 +74,33 @@ export default defineComponent({
   data() {
     return {
       items,
+      breakpoints: {
+        244: {
+          itemsToShow: 2,
+          snapAlign: "center",
+        },
+        // 700px and up
+        700: {
+          itemsToShow: 3,
+          snapAlign: "center",
+        },
+        // 1024 and up
+        1024: {
+          itemsToShow: 3.95,
+          snapAlign: "center",
+        },
+      },
     };
   },
 });
 </script>
 
 <style scoped>
-.container-m {
-  margin: 5rem;
-}
 p.text {
   text-align: justify;
 }
 .carousel {
-  width: 85vw;
+  width: 68vw;
 }
 .carousel-div {
   display: flex;
@@ -94,22 +108,16 @@ p.text {
   align-items: center;
   margin-bottom: 5rem;
 }
-/* .carousel__slide > .carousel__item {
-  transform: scale(1);
-  opacity: 0.5;
-  transition: 0.5s;
+
+@media screen and (max-width: 1024px) {
+  .carousel-div {
+    transform: scale(0.8);
+  }
+  .carousel {
+    width: 85vw;
+  }
+  .carousel__item {
+    min-width: 50vw;
+  }
 }
-.carousel__slide--visible > .carousel__item {
-  opacity: 1;
-  transform: rotateY(0);
-}
-.carousel__slide--next > .carousel__item {
-  transform: scale(0.9) translate(-10px);
-}
-.carousel__slide--prev > .carousel__item {
-  transform: scale(0.9) translate(10px);
-}
-.carousel__slide--active > .carousel__item {
-  transform: scale(1.1);
-} */
 </style>

@@ -3,7 +3,7 @@
     <img :src="require(`@/assets/${heroimg}`)" class="banner" alt="AAES" />
     <div class="hero-desc">
       <div>
-        <h1 class="title has-text-white is-size-1">{{ herotitle }}</h1>
+        <h1 class="title has-text-white is-size-2">{{ herotitle }}</h1>
         <h5 class="subtitle is-4 has-text-white">
           {{ herodesc }}
         </h5>
@@ -51,6 +51,7 @@ export default {
 .banner {
   z-index: 1;
   height: 100%;
+  object-fit: cover;
 }
 .is-active {
   color: rgb(211, 209, 209) !important;

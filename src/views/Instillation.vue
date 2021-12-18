@@ -1,7 +1,7 @@
 <template>
   <section-hero
-    herotitle="Installation, Testing &amp; Commissioning"
-    herodesc="This is a description"
+    herotitle="Installation"
+    herodesc="Installation,Testing &amp; Commissioning"
     heroimg="inst-hero-inst.jpg"
   />
   <div class="container-m">
@@ -21,9 +21,9 @@
           <a
             href="https://energysaver.nsw.gov.au/households/solar-and-battery-power"
             target="_blank"
-            >https://energysaver.nsw.gov.au/households/solar-and-battery-power</a
+            >energysaver.nsw.gov.au</a
           >
-          We work with many retailers to install the PV systems on
+          . We work with many retailers to install the PV systems on
           sub-contracting basis. Please discuss with our friendly Team about
           your solar requirements and eligibility.
         </p>
@@ -32,7 +32,7 @@
         <img src="../assets/inst-solar.jpg" class="image" alt="Solar Panels" />
       </div>
     </div>
-
+    <hr />
     <div class="electrical columns pb-5" id="electrical">
       <div class="column">
         <img
@@ -57,7 +57,7 @@
         </p>
       </div>
     </div>
-
+    <hr />
     <div class="transformer columns pb-5" id="transformers">
       <div class="column">
         <h1 class="title">Transformers</h1>

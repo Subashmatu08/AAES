@@ -3,7 +3,7 @@
     <div class="card-image">
       <figure class="image is-4by3">
         <img
-          class="image m-0"
+          class="image"
           :src="require(`@/assets/${AccImage}`)"
           alt="Placeholder image"
         />
@@ -33,9 +33,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card {
-  max-width: 20vw;
-  min-height: 60vh;
+  min-width: 23vw;
+  padding: auto 10rem;
+  min-height: 70vh;
+  transform: scale(0.7);
+}
+.image {
+  width: 100%;
+  transform: scale(0.7);
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    min-width: 17vw;
+    padding: auto 10rem;
+    max-height: 50vh;
+    transform: scale(0.7);
+  }
 }
 </style>

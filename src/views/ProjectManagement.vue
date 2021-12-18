@@ -47,9 +47,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-m {
-  margin: 5rem;
-}
+// .container-m {
+//   margin: 5rem;
+// }
 p.text {
   text-align: justify;
 }

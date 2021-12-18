@@ -42,6 +42,7 @@
         <img src="../assets/transformer-pole.jpg" class="image" alt="" />
       </div>
     </div>
+    <hr />
     <div class="columns py-5">
       <div class="column">
         <img src="../assets/transformer-pole.jpg" class="image" alt="" />
@@ -74,6 +75,7 @@
         </div>
       </div>
     </div>
+    <hr />
     <div class="columns py-5">
       <div class="column">
         <p class="title">Industrial Transformers:</p>
@@ -133,7 +135,7 @@ p.text {
   width: 100%;
   border-radius: 5px;
 }
-.container-m {
-  margin: 5rem;
-}
+// .container-m {
+//   margin: 5rem;
+// }
 </style>
