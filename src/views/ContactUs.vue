@@ -1,7 +1,7 @@
 <template>
   <section-hero
     herotitle="Contact Us"
-    herodesc="This is a description for Contact Us"
+    herodesc="Contact Us for your queries "
     heroimg="inst-hero-contact.jpg"
   />
 </template>
