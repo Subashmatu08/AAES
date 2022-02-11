@@ -52,3 +52,16 @@
         >
       </div>
 
+TO DO :
+[X] - Customize Scroll Bar
+[X] - Make Responsive - Form
+[X] - Fix Caraousel
+[ ] - Add alert after submitting form
+[X] - Fix Nav links
+[X] - Navbar position
+[X] - Make relative 404 page
+[ ] - Add Cover Images
+[ ] - Add Favicon
+[ ] - Add Transformer Images
+[ ] - Fix Hosting issues
+

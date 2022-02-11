@@ -6,7 +6,7 @@
   />
   <div class="container-m">
     <h1 class="is-size-2 title">Accredatation</h1>
-    <p class="text py-5">
+    <p class="text pt-5 pb-1">
       We are NSW Based Licensed Electrical contractors with Fair trading and
       registered master cablers with ACMA. Our accreditations with Clean Energy
       Council as a Designer and installer enable us to play vital role in
@@ -17,41 +17,39 @@
       communication industry kept us with current regulations, australian
       standards and industry updates.
     </p>
-  </div>
-
-  <div class="carousel-div">
-    <Carousel
-      :autoplay="3000"
-      :wrapAround="true"
-      class="carousel"
-      :settings="settings"
-      :breakpoints="breakpoints"
-    >
-      <template #slides>
-        <Slide v-for="item in items" :key="item.id">
-          <div class="carousel__item">
-            <carousel-comp
-              :AccImage="item.img"
-              :AccTitle="item.title"
-              :AccContent="item.descr"
-              :AccSubtitle="item.subtitle"
-            />
-          </div>
-        </Slide>
-      </template>
-      <template #addons="{ slidesCount }">
-        <Navigation v-if="slidesCount > 1" />
-        <!-- <pagination /> -->
-      </template>
-    </Carousel>
-  </div>
-
-  <!-- <carousel-comp
+    <div class="carousel-div">
+      <Carousel
+        :autoplay="3000"
+        :wrapAround="true"
+        class="carousel"
+        :settings="settings"
+        :breakpoints="breakpoints"
+      >
+        <template #slides>
+          <Slide v-for="item in items" :key="item.id">
+            <div class="carousel__item">
+              <carousel-comp
+                :AccImage="item.img"
+                :AccTitle="item.title"
+                :AccContent="item.descr"
+                :AccSubtitle="item.subtitle"
+              />
+            </div>
+          </Slide>
+        </template>
+        <template #addons="{ slidesCount }">
+          <Navigation v-if="slidesCount > 1" />
+          <!-- <pagination /> -->
+        </template>
+      </Carousel>
+    </div>
+    <!-- <carousel-comp
     AccImage="Acc-1.jpg"
     AccTitle="Accredited Solar Designer"
     AccContent="Accredited Solar Designer"
     AccSubtitle="Accredited Solar Designer"
   /> -->
+  </div>
 </template>
 
 <script>
@@ -75,18 +73,24 @@ export default defineComponent({
     return {
       items,
       breakpoints: {
-        244: {
-          itemsToShow: 2,
+        480: {
+          itemsToShow: 1.5,
           snapAlign: "center",
         },
         // 700px and up
-        700: {
-          itemsToShow: 3,
+        972: {
+          itemsToShow: 2.2,
           snapAlign: "center",
         },
         // 1024 and up
+        973: {
+          // itemsToShow: 3.95,
+          itemsToShow: 2.2,
+          snapAlign: "center",
+        },
         1024: {
-          itemsToShow: 3.95,
+          // itemsToShow: 3.95,
+          itemsToShow: 2.75,
           snapAlign: "center",
         },
       },
@@ -99,17 +103,8 @@ export default defineComponent({
 p.text {
   text-align: justify;
 }
-.carousel {
-  width: 68vw;
-}
-.carousel-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5rem;
-}
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .carousel-div {
     transform: scale(0.8);
   }
@@ -119,5 +114,5 @@ p.text {
   .carousel__item {
     min-width: 50vw;
   }
-}
+} */
 </style>

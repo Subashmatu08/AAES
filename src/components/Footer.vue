@@ -1,6 +1,6 @@
 <template>
   <div class="footer-main">
-    <div class="left">&copy;2021 Austrailian Applied Engineering System</div>
+    <div class="left">&copy;2021 Australian Applied Engineering Systems</div>
     <hr />
     <div class="right">
       <ul>

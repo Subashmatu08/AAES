@@ -33,23 +33,51 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
-  min-width: 23vw;
-  padding: auto 10rem;
-  min-height: 70vh;
-  transform: scale(0.7);
+  width: max-content;
+  height: 60vh;
+  transform: scale(0.8);
 }
 .image {
-  width: 100%;
-  transform: scale(0.7);
+  width: 20vw;
+  aspect-ratio: 10/8;
+  transform: scale(0.8);
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 480px) {
   .card {
-    min-width: 17vw;
-    padding: auto 10rem;
-    max-height: 50vh;
-    transform: scale(0.7);
+    height: 60vh;
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card {
+    height: 80vh;
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 972px) {
+  .card {
+    height: 80vh;
+    width: 45vw;
+  }
+}
+// @media screen and (min-width: 970px) {
+//   .card {
+//     height: 80vh;
+//   }
+// }
+@media screen and (min-width: 1024px) {
+  .card {
+    height: 100vh;
+    width: 45vw;
+    transform: scale(0.6);
+    .image {
+      width: 40vw;
+      aspect-ratio: 10/8;
+      transform: scale(0.8);
+    }
   }
 }
 </style>

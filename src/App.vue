@@ -22,14 +22,33 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 55px;
+}
 main {
   min-height: 100vh !important;
 }
 HTML {
+  width: 100vw;
   scroll-behavior: smooth;
 }
 .container-m {
   margin: 5rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #ebe7e7;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b9b4b4;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a7a6a6;
 }
 @media screen and (max-width: 1024px) {
   .container-m {

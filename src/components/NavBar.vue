@@ -24,9 +24,9 @@
         aria-expanded="false"
         data-target="navbarBasicExample"
       >
+        <span aria-hidden="true" class="nav-toggle"></span>
         <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true" class="nav-toggle"></span>
       </a>
     </div>
 
@@ -141,6 +141,7 @@ export default {
   setup() {
     const isMenuShown = ref(false);
     const isNavShown = ref(false);
+
     function handleScroll() {
       if (window.scrollY > 1) {
         isNavShown.value = true;
@@ -151,6 +152,7 @@ export default {
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
     });
+
     return {
       isMenuShown,
       isNavShown,
@@ -161,13 +163,19 @@ export default {
 
 <style lang="scss">
 .navbar {
-  position: relative;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   backdrop-filter: blur(2px);
   box-shadow: 0px 1px 4px rgba(66, 66, 66, 0.199);
   padding-top: 3px !important;
   padding-bottom: 3px !important;
   // background: rgba(255, 255, 255, 0.788);
+}
+.nav-toggle {
+  background-color: black !important;
 }
 .logo {
   font-size: 20px;
@@ -216,10 +224,10 @@ nav.isNavShown {
   background-color: white !important;
   transition: 0.2s ease-in-out;
   box-shadow: 0px 1.5px 7px rgb(66, 66, 66);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
 }
 .navbar-menu a.isNavShown {
   color: black !important;
@@ -245,5 +253,13 @@ nav a.router-link-active {
   .logo {
     font-size: 15px;
   }
+}
+//to remove blue background color when clicked on touch devices
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 </style>

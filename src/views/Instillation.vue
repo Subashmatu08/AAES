@@ -4,9 +4,9 @@
     herodesc="Installation,Testing &amp; Commissioning"
     heroimg="inst-hero-inst.jpg"
   />
-  <div class="container-m">
+  <div class="container-m" id="solarsystems">
     <p class="title pb-5 is-size-2">What are all the Instillations we do?</p>
-    <div class="solarsys columns pb-5" id="solarsystems">
+    <div class="solarsys columns pb-5">
       <div class="inst-desc column">
         <h1 class="title">Solar PV Systems</h1>
         <p class="text">
@@ -27,13 +27,14 @@
           sub-contracting basis. Please discuss with our friendly Team about
           your solar requirements and eligibility.
         </p>
+        <div id="electrical"></div>
       </div>
       <div class="inst-pic column">
         <img src="../assets/inst-solar.jpg" class="image" alt="Solar Panels" />
       </div>
     </div>
     <hr />
-    <div class="electrical columns pb-5" id="electrical">
+    <div class="electrical columns pb-5">
       <div class="column">
         <img
           src="../assets/inst-electrical.jpg"
@@ -55,10 +56,12 @@
           substation assets and Electrical installations. Please contact us to
           discuss your electrical requirements.
         </p>
+        <div id="transformers"></div>
       </div>
     </div>
+
     <hr />
-    <div class="transformer columns pb-5" id="transformers">
+    <div class="transformer columns pb-5">
       <div class="column">
         <h1 class="title">Transformers</h1>
         <p class="text">
