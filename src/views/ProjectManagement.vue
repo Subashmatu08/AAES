@@ -2,7 +2,7 @@
   <section-hero
     herotitle="Project Management"
     herodesc="This is a description for Project Management"
-    heroimg="inst-hero-pm.png"
+    heroimg="hero-pm.png"
   />
   <div class="container-m">
     <h1 class="title is-size-2">Project Management Title</h1>
@@ -47,9 +47,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .container-m {
-//   margin: 5rem;
-// }
 p.text {
   text-align: justify;
 }

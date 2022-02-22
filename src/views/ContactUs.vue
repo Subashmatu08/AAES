@@ -2,12 +2,12 @@
   <section-hero
     herotitle="Contact Us"
     herodesc="Contact Us for your queries "
-    heroimg="inst-hero-contact.jpg"
+    heroimg="hero-contact.jpg"
   />
   <div class="columns">
     <div class="column">
       <div class="container">
-        <h2 class="subtitle">Contact Us with the form below !</h2>
+        <h2 class="subtitle">Contact Us with the form below</h2>
         <form class="contact-form" @submit.prevent="sendEmail">
           <label>Name</label>
           <input
@@ -53,7 +53,7 @@
         <div class="thank">
           <div class="thank2">
             <div v-show="isShow" class="subtitle">
-              Thank You For Submitting !!
+              Your Message has been Sent
             </div>
           </div>
         </div>
@@ -75,8 +75,6 @@
       </div>
     </div>
   </div>
-
-  <!--  -->
 </template>
 
 <script>
@@ -151,7 +149,7 @@ input[type="text"],
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgba(13, 212, 226, 0.795);
+  border: 2px solid #04427a;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -160,7 +158,8 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: rgba(13, 212, 226, 0.795);
+  // background-color: rgba(13, 212, 226, 0.795);
+  background-color: #04427a !important;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -170,7 +169,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(11, 191, 204, 0.897);
+  background-color: #05569c !important;
 }
 .contactus {
   display: flex;
@@ -186,6 +185,11 @@ input[type="submit"]:hover {
 @media screen and (max-width: 1024px) {
   .columns {
     margin: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 0 !important;
   }
 }
 </style>

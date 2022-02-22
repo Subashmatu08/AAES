@@ -13,11 +13,6 @@ export default {
     NavBar,
     Footer,
   },
-  setup() {
-    // window.scroll({
-    //   behavior: "smooth",
-    // });
-  },
 };
 </script>
 
@@ -55,4 +50,7 @@ HTML {
     margin: 2rem !important;
   }
 }
+// Accent Colors are
+// Blue:#05569c
+// Red:#CB2622
 </style>

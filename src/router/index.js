@@ -3,11 +3,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import ErrorPage from "../views/ErrorPage.vue";
 
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "Home",
-  //   component: Home,
-  // },
   {
     path: "/",
     name: "instillation",
@@ -18,25 +13,29 @@ const routes = [
     path: "/transformers",
     name: "transofmers",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Transformer.vue"),
+      import(/* webpackChunkName: "transformers" */ "../views/Transformer.vue"),
   },
   {
     path: "/project-management",
     name: "project-management",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ProjectManagement.vue"),
+      import(
+        /* webpackChunkName: "ProjectManagement" */ "../views/ProjectManagement.vue"
+      ),
   },
   {
     path: "/accreditations",
     name: "accreditations",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Accreditation.vue"),
+      import(
+        /* webpackChunkName: "Accreditation" */ "../views/Accreditation.vue"
+      ),
   },
   {
     path: "/contact-us",
     name: "contact-us",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ContactUs.vue"),
+      import(/* webpackChunkName: "ContactUs" */ "../views/ContactUs.vue"),
   },
   // {
   //   path: "/about",
@@ -56,9 +55,6 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  // scrollBehavior(to, from, savedPosition) {
-  //   return savedPosition || { top: 0 };
-  // },
   // eslint-disable-next-line no-unused-vars
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {

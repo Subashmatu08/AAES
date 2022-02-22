@@ -2,11 +2,11 @@
   <section-hero
     herotitle="Accreditations"
     herodesc="This is a description"
-    heroimg="inst-hero-acc.jpg"
+    heroimg="hero-acc.jpg"
   />
   <div class="container-m">
-    <h1 class="is-size-2 title">Accredatation</h1>
-    <p class="text pt-5 pb-1">
+    <h1 class="is-size-2 title">Accreditations</h1>
+    <p class="text pt-5">
       We are NSW Based Licensed Electrical contractors with Fair trading and
       registered master cablers with ACMA. Our accreditations with Clean Energy
       Council as a Designer and installer enable us to play vital role in
@@ -104,15 +104,9 @@ p.text {
   text-align: justify;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .carousel-div {
     transform: scale(0.8);
   }
-  .carousel {
-    width: 85vw;
-  }
-  .carousel__item {
-    min-width: 50vw;
-  }
-} */
+}
 </style>

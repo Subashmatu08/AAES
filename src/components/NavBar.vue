@@ -12,7 +12,8 @@
         @click="isMenuShown = !isMenuShown"
         :class="{ isNavShown }"
       >
-        Austrailian Applied Engineering System
+        <img class="nav-img" src="../../public/favicon.jpg" />
+        Australian Applied Engineering Systems
       </router-link>
 
       <a
@@ -22,7 +23,6 @@
         :class="{ 'is-active': isMenuShown, isNavShown }"
         aria-label="menu"
         aria-expanded="false"
-        data-target="navbarBasicExample"
       >
         <span aria-hidden="true" class="nav-toggle"></span>
         <span aria-hidden="true"></span>
@@ -30,11 +30,7 @@
       </a>
     </div>
 
-    <div
-      id="navbarBasicExample"
-      class="navbar-menu"
-      :class="{ 'is-active': isMenuShown }"
-    >
+    <div class="navbar-menu" :class="{ 'is-active': isMenuShown }">
       <div class="navbar-end">
         <!-- <router-link
           to="/"
@@ -54,7 +50,7 @@
             active-class="router-link-active"
             @click="isMenuShown = !isMenuShown"
           >
-            Instillation
+            Installation
           </router-link>
 
           <div class="navbar-dropdown">
@@ -99,7 +95,7 @@
           active-class="router-link-active"
           @click="isMenuShown = !isMenuShown"
         >
-          Project Managements
+          Project Management
         </router-link>
         <router-link
           to="/accreditations"
@@ -108,7 +104,7 @@
           active-class="router-link-active"
           @click="isMenuShown = !isMenuShown"
         >
-          Accredatations
+          Accreditations
         </router-link>
         <router-link
           to="/contact-us"
@@ -120,17 +116,6 @@
           Contact Us
         </router-link>
       </div>
-
-      <!-- <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light"> Log in </a>
-          </div>
-        </div>
-      </div> -->
     </div>
   </nav>
 </template>
@@ -174,12 +159,18 @@ export default {
   padding-bottom: 3px !important;
   // background: rgba(255, 255, 255, 0.788);
 }
+
+.nav-img {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
 .nav-toggle {
   background-color: black !important;
 }
 .logo {
   font-size: 20px;
-  color: rgb(7, 7, 7) !important;
+  color: #04427a !important;
+
   margin-top: 5px;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -189,29 +180,21 @@ export default {
     background: transparent;
   }
   &:hover {
-    color: black !important;
+    color: #04427a !important;
   }
 }
 nav a {
   color: black !important;
   background: transparent !important;
-  // text-align: center;
-  // font-weight: 500;
-  // margin-top: 5px;
-  // border: none;
   margin: auto 2px;
-  // &:hover {
-  //   background: transparent !important;
-  // }
-  // &:focus {
-  //   background: transparent !important;
-  // }
+  z-index: 2;
 }
 .navbar-menu a::after {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(16, 230, 245, 0.37);
+  // background: rgba(16, 230, 245, 0.37);
+  background: #4aa1ee49;
   inset: 0;
   opacity: 0;
 }
@@ -224,10 +207,6 @@ nav.isNavShown {
   background-color: white !important;
   transition: 0.2s ease-in-out;
   box-shadow: 0px 1.5px 7px rgb(66, 66, 66);
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
 }
 .navbar-menu a.isNavShown {
   color: black !important;
@@ -251,10 +230,13 @@ nav a.router-link-active {
     background: black;
   }
   .logo {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .nav-img {
+    transform: scale(1.5);
+    margin-right: 10px;
   }
 }
-//to remove blue background color when clicked on touch devices
 input,
 textarea,
 button,

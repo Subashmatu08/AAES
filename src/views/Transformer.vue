@@ -2,7 +2,7 @@
   <section-hero
     herotitle="Transformers"
     herodesc="This is a description for Transformers"
-    heroimg="inst-hero-transformer.jpg"
+    heroimg="hero-transformer.jpg"
   />
   <div class="container-m">
     <p class="title is-size-2">Distribution &amp; Power Transformers</p>
@@ -135,7 +135,4 @@ p.text {
   width: 100%;
   border-radius: 5px;
 }
-// .container-m {
-//   margin: 5rem;
-// }
 </style>

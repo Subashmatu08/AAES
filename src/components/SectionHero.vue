@@ -31,7 +31,6 @@ export default {
 <style>
 .hero {
   height: 60vh;
-  /* background: url("../assets/inst-hero3.jpg") center no-repeat; */
   background-size: cover;
   position: relative;
 }

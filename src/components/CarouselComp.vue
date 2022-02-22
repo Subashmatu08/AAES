@@ -35,8 +35,8 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  width: max-content;
-  height: 60vh;
+  height: 50vh;
+  width: 70vw;
   transform: scale(0.8);
 }
 .image {
@@ -47,28 +47,23 @@ export default {
 
 @media screen and (min-width: 480px) {
   .card {
-    height: 60vh;
+    height: 40vh;
     width: 55vw;
   }
 }
 @media screen and (min-width: 600px) {
   .card {
-    height: 80vh;
+    height: 60vh;
     width: 55vw;
   }
 }
 @media screen and (min-width: 972px) {
   .card {
-    height: 80vh;
+    height: 50vh;
     width: 45vw;
   }
 }
-// @media screen and (min-width: 970px) {
-//   .card {
-//     height: 80vh;
-//   }
-// }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .card {
     height: 100vh;
     width: 45vw;

@@ -2,7 +2,7 @@
   <section-hero
     herotitle="Installation"
     herodesc="Installation,Testing &amp; Commissioning"
-    heroimg="inst-hero-inst.jpg"
+    heroimg="hero-inst.jpg"
   />
   <div class="container-m" id="solarsystems">
     <p class="title pb-5 is-size-2">What are all the Instillations we do?</p>
@@ -106,10 +106,5 @@ p.text {
 .image {
   width: 100%;
   border-radius: 5px;
-}
-</style>
-<style lang="scss">
-.container-m {
-  margin: 5rem;
 }
 </style>

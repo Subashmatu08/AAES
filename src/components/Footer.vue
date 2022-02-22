@@ -1,6 +1,6 @@
 <template>
   <div class="footer-main">
-    <div class="left">&copy;2021 Australian Applied Engineering Systems</div>
+    <div class="left">&copy; 2021 Australian Applied Engineering Systems</div>
     <hr />
     <div class="right">
       <ul>
@@ -35,7 +35,6 @@ export default {};
   display: flex;
   justify-content: space-between;
   background: rgb(231, 229, 229);
-  box-shadow: 1px 1px 5px grey;
 }
 .footer-main > * {
   padding: 1rem 0;
