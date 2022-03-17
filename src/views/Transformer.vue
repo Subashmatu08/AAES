@@ -1,8 +1,8 @@
 <template>
   <section-hero
     herotitle="Transformers"
-    herodesc="This is a description for Transformers"
-    heroimg="hero-transformer.jpg"
+    herodesc=""
+    heroimg="hero-transformer2.jpg"
   />
   <div class="container-m">
     <p class="title is-size-2">Distribution &amp; Power Transformers</p>

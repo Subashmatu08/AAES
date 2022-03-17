@@ -1,11 +1,11 @@
 <template>
   <section-hero
     herotitle="Project Management"
-    herodesc="This is a description for Project Management"
+    herodesc=""
     heroimg="hero-pm.png"
   />
   <div class="container-m">
-    <h1 class="title is-size-2">Project Management Title</h1>
+    <h1 class="title is-size-2">Project Management</h1>
     <p class="text">
       We are engineering focused project management specialists. Had extensive
       experience in project management from sales to product delivery and after
@@ -20,7 +20,7 @@
     </p>
     <div class="subtitle pt-5">We assist Our clients with: -</div>
     <p>
-      <ul>
+      <ul class="pl-5" style="list-style-type:disc">
         <li>Market study</li>
         <li>Tender management</li>
         <li>Contract management</li>

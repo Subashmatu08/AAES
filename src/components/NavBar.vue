@@ -50,7 +50,7 @@
             active-class="router-link-active"
             @click="isMenuShown = !isMenuShown"
           >
-            Installation
+            Installations
           </router-link>
 
           <div class="navbar-dropdown">
@@ -113,7 +113,7 @@
           active-class="router-link-active"
           @click="isMenuShown = !isMenuShown"
         >
-          Contact Us
+          Reach Us
         </router-link>
       </div>
     </div>

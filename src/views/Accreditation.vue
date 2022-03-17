@@ -1,9 +1,5 @@
 <template>
-  <section-hero
-    herotitle="Accreditations"
-    herodesc="This is a description"
-    heroimg="hero-acc.jpg"
-  />
+  <section-hero herotitle="Accreditations" herodesc="" heroimg="hero-acc.jpg" />
   <div class="container-m">
     <h1 class="is-size-2 title">Accreditations</h1>
     <p class="text pt-5">
@@ -17,96 +13,107 @@
       communication industry kept us with current regulations, australian
       standards and industry updates.
     </p>
-    <div class="carousel-div">
-      <Carousel
-        :autoplay="3000"
-        :wrapAround="true"
-        class="carousel"
-        :settings="settings"
-        :breakpoints="breakpoints"
-      >
-        <template #slides>
-          <Slide v-for="item in items" :key="item.id">
-            <div class="carousel__item">
-              <carousel-comp
-                :AccImage="item.img"
-                :AccTitle="item.title"
-                :AccContent="item.descr"
-                :AccSubtitle="item.subtitle"
-              />
-            </div>
-          </Slide>
-        </template>
-        <template #addons="{ slidesCount }">
-          <Navigation v-if="slidesCount > 1" />
-          <!-- <pagination /> -->
-        </template>
-      </Carousel>
+
+    <div class="accimages">
+      <div class="tile tile1">
+        <img src="../assets/Acc-3.jpg" alt="" />
+      </div>
+      <div class="tile tile2">
+        <img src="../assets/Acc-4.png" alt="" />
+      </div>
+      <div class="tile tile3">
+        <img src="../assets/Acc-5.png" alt="" />
+      </div>
+      <div class="tile tile4">
+        <img src="../assets/Acc-1.jpg" alt="" />
+      </div>
+      <div class="tile tile5">
+        <img src="../assets/Acc-2.jpg" />
+      </div>
     </div>
-    <!-- <carousel-comp
-    AccImage="Acc-1.jpg"
-    AccTitle="Accredited Solar Designer"
-    AccContent="Accredited Solar Designer"
-    AccSubtitle="Accredited Solar Designer"
-  /> -->
   </div>
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import CarouselComp from "../components/CarouselComp.vue";
-import items from "../components/items.js";
 import SectionHero from "../components/SectionHero.vue";
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation } from "vue3-carousel";
-export default defineComponent({
+export default {
   name: "Autoplay",
   components: {
     SectionHero,
-    CarouselComp,
-    Carousel,
-    Slide,
-    // Pagination,
-    Navigation,
   },
-  data() {
-    return {
-      items,
-      breakpoints: {
-        480: {
-          itemsToShow: 1.5,
-          snapAlign: "center",
-        },
-        // 700px and up
-        972: {
-          itemsToShow: 2.2,
-          snapAlign: "center",
-        },
-        // 1024 and up
-        973: {
-          // itemsToShow: 3.95,
-          itemsToShow: 2.2,
-          snapAlign: "center",
-        },
-        1024: {
-          // itemsToShow: 3.95,
-          itemsToShow: 2.75,
-          snapAlign: "center",
-        },
-      },
-    };
-  },
-});
+};
 </script>
 
 <style scoped>
 p.text {
   text-align: justify;
 }
-
-@media screen and (min-width: 1024px) {
-  .carousel-div {
-    transform: scale(0.8);
+img {
+  transform: scale(0.7);
+}
+.accimages {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+  grid-template-columns: repeat(4, 15em) !important;
+  grid-template-rows: repeat(4, 10em) !important;
+  gap: 0.25em;
+  margin-bottom: 1em;
+  transform: scale(0.8);
+}
+.tile {
+  border: 1px solid rgb(105, 103, 103);
+  box-shadow: 10px 10px 10px 1px rgb(189, 187, 187);
+  border-radius: 5px;
+}
+.tile1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile2 {
+  grid-column: 3 / span 4;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile3 {
+  grid-column: 3 / span 4;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile4 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile5 {
+  grid-column: 3 / span 4;
+  grid-row: 3 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 890px) {
+  .accimages {
+    transform: scale(0.5) !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  img {
+    transform: scale(0.5);
+  }
+  .accimages {
+    transform: scale(0.3) !important;
+    height: 50vh;
   }
 }
 </style>

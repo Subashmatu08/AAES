@@ -1,11 +1,11 @@
 <template>
   <section-hero
-    herotitle="Installation"
+    herotitle="Installations"
     herodesc="Installation,Testing &amp; Commissioning"
     heroimg="hero-inst.jpg"
   />
   <div class="container-m" id="solarsystems">
-    <p class="title pb-5 is-size-2">What are all the Instillations we do?</p>
+    <p class="title py-5 is-size-2"></p>
     <div class="solarsys columns pb-5">
       <div class="inst-desc column">
         <h1 class="title">Solar PV Systems</h1>
@@ -43,7 +43,7 @@
         />
       </div>
       <div class="column">
-        <h1 class="title">Electrical</h1>
+        <h1 class="title">Electrical Installations and Testing</h1>
         <p class="text pb-3">
           Being a Licenced Electrical Contractors, we undertake Installation of
           Electrical Systems right from 230/440V Switchboards up to Large
@@ -75,7 +75,7 @@
       </div>
       <div class="column">
         <img
-          src="../assets/inst-transformer1.jpg"
+          src="../assets/inst-transformer2.jpg"
           class="image"
           alt="Transformer"
         />

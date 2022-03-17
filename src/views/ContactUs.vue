@@ -1,13 +1,13 @@
 <template>
   <section-hero
-    herotitle="Contact Us"
-    herodesc="Contact Us for your queries "
+    herotitle="Reach Us"
+    herodesc="Reach us for your queries "
     heroimg="hero-contact.jpg"
   />
   <div class="columns">
-    <div class="column">
+    <!-- <div class="column">
       <div class="container">
-        <h2 class="subtitle">Contact Us with the form below</h2>
+        <h2 class="subtitle">Send us a Query</h2>
         <form class="contact-form" @submit.prevent="sendEmail">
           <label>Name</label>
           <input
@@ -58,19 +58,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="column">
+    </div> -->
+    <div class="column new">
       <div class="container-m contactus">
-        <div class="">
-          <div class="subtitle">
-            Call or Email us with the information provided below
-          </div>
-          Email:
+        <div>
+          <h1 class="title pb-5">Call us or Email us</h1>
           <a href="mailto:Australianapplied@gmail.com"
-            >Australianapplied@gmail.com</a
+            ><i class="fas fa-envelope pr-3"></i>Australianapplied@gmail.com</a
           >
           <br />
-          Mobile: <a href="tel:+61430306061">+61 4 3030 6061</a>
+
+          <a href="tel:+61430306061"
+            ><i class="fas fa-phone-alt pr-3"></i>+61 4 3030 6061</a
+          >
         </div>
       </div>
     </div>
@@ -78,46 +78,46 @@
 </template>
 
 <script>
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import SectionHero from "../components/SectionHero.vue";
 export default {
   components: {
     SectionHero,
   },
-  name: "ContactUs",
-  data() {
-    return {
-      user_name: "",
-      user_phone: "",
-      user_email: "",
-      message: "",
-    };
-  },
-  methods: {
-    sendEmail(e) {
-      try {
-        emailjs.sendForm(
-          "service_a4hnsel",
-          "template_tquwdwj",
-          e.target,
-          "user_BuzDlQqLeQG5RMAH4XEyr",
-          {
-            user_name: this.user_name,
-            user_phone: this.user_phone,
-            user_email: this.user_email,
-            message: this.message,
-          }
-        );
-      } catch (error) {
-        console.log({ error });
-      }
-      // Reset form field
-      this.user_name = "";
-      this.user_phone = "";
-      this.user_email = "";
-      this.message = "";
-    },
-  },
+  // name: "ContactUs",
+  // data() {
+  //   return {
+  //     user_name: "",
+  //     user_phone: "",
+  //     user_email: "",
+  //     message: "",
+  //   };
+  // },
+  //   methods: {
+  //     sendEmail(e) {
+  //       try {
+  //         emailjs.sendForm(
+  //           "service_a4hnsel",
+  //           "template_tquwdwj",
+  //           e.target,
+  //           "user_BuzDlQqLeQG5RMAH4XEyr",
+  //           {
+  //             user_name: this.user_name,
+  //             user_phone: this.user_phone,
+  //             user_email: this.user_email,
+  //             message: this.message,
+  //           }
+  //         );
+  //       } catch (error) {
+  //         console.log({ error });
+  //       }
+  //       // Reset form field
+  //       this.user_name = "";
+  //       this.user_phone = "";
+  //       this.user_email = "";
+  //       this.message = "";
+  //     },
+  //   },
 };
 </script>
 <style lang="scss" scoped>
@@ -191,5 +191,13 @@ input[type="submit"]:hover {
   .container {
     padding-bottom: 0 !important;
   }
+}
+.new {
+  min-height: 70vh;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+i {
+  color: black;
 }
 </style>

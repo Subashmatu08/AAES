@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: "/transformers",
-    name: "transofmers",
+    name: "transformers",
     component: () =>
       import(/* webpackChunkName: "transformers" */ "../views/Transformer.vue"),
   },
